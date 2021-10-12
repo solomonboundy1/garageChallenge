@@ -14,19 +14,31 @@ public class Manager {
 	
 	
 	
-	public void addVehicle() {
+	public void addVehicle(Vehicle vehicle) {
+		
+		garage.add(vehicle);
+		System.out.println("Vehicles in garage: " + garage);
 		
 	}
 	
-	public void removeVehicle() {
+	public void removeVehicle(Vehicle vehicle) {
+		
+		garage.remove(vehicle);
+		System.out.println("Vehicles in garage: " + garage);
 		
 	}
 	
-	public void fixVehicle() {
+	public void fixVehicle(Vehicle vehicle) {
+		
+		vehicle.calcBill();
 		
 	}
 	
 	public void clearGarage() {
+		
+		garage.clear();
+		
+		System.out.println("Vehicles in garage: " + garage);
 		
 	}
 	

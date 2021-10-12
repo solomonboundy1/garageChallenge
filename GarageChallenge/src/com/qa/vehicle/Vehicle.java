@@ -8,7 +8,7 @@ public abstract class Vehicle {
 	String makeModel;
 	int vehicleCondition;
 	
-	public abstract void calcBill();
+	public abstract int calcBill();
 		
 		
 	

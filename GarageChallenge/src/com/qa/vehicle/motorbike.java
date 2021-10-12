@@ -14,11 +14,14 @@ public class motorbike extends Vehicle {
 	private boolean sportsBike;
 	private int engineSize;
 	
-	Vehicle motorbike1 = new motorbike(3, 20, 2, "Kawasaki Ninja", 85, true, 50);
-	Vehicle motorbike2 = new motorbike(4, 35, 2, "Vincent Black Shadow", 20, false, 30);
+	
+	
+
+	
+
 
 	@Override
-	public void calcBill() {
+	public int calcBill() {
 		
 		return 200 + (engineSize * 2) + size * vehicleCondition; 
 		
